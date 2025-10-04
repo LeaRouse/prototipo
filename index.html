@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Visor 3D - AstroCycle</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+      background-color: #000; /* Fondo oscuro */
+    }
+    model-viewer {
+      width: 100vw;
+      height: 100vh;
+    }
+  </style>
+</head>
+<body>
+  <model-viewer src="modelo.glb"
+    alt="Modelo 3D interactivo"
+    auto-rotate
+    camera-controls
+    shadow-intensity="1"
+    exposure="1"
+    environment-image="neutral">
+  </model-viewer>
+</body>
+</html>
